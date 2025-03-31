@@ -6,6 +6,7 @@
 
 const { app, BrowserWindow, Notification } = require('electron/main')
 const path = require('node:path')
+const parser = require('./src/parser')
 
 app.whenReady().then(() => {
   const mainWindow = new BrowserWindow({
@@ -16,11 +17,13 @@ app.whenReady().then(() => {
     }
   })
 
+  data = parser.parseJson()
+
   if (Notification.isSupported()) {
     const notification = new Notification({
-      title: 'Hello World!',
-      subtitle: 'Nice to see you',
-      body: 'Are you having a good day?',
+      title: 'Notification!',
+      subtitle: 'Data from model',
+      body: `${Object.keys(data)[0]}: ${data[Object.keys(data)[0]]}\n${Object.keys(data)[1]}: ${data[Object.keys(data)[1]]}`,
       hasReply: true
     })
 
