@@ -1,22 +1,43 @@
 <script>
-  let imgSrc = 'http://127.0.0.1:5000/video/display?ts=' + Date.now();
-
-  function refresh() {
-    imgSrc = 'http://127.0.0.1:5000/video/display?ts=' + Date.now();
-  }
-
-  // 每0.1秒刷新一次图片
-  let timer;
-  import { onMount, onDestroy } from 'svelte';
-  onMount(() => {
-    timer = setInterval(refresh, 100);
-  });
-  onDestroy(() => {
-    clearInterval(timer);
-  });
+  import { page } from '$app/stores';
+  import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper } from 'flowbite-svelte';
+  import { ChartPieSolid, GridSolid, MailBoxSolid, DatabaseSolid, TerminalSolid, ArrowRightToBracketOutline } from 'flowbite-svelte-icons';
+  $: activeUrl = $page.url.pathname;
 </script>
 
-<div style="display: flex; flex-direction: column; align-items: center; margin-top: 2rem;">
-  <h2>摄像头实时画面</h2>
-  <img src={imgSrc} alt="实时画面" style="width: 640px; height: 480px; border: 1px solid #ccc;" />
-</div>
+<Sidebar {activeUrl}>
+  <SidebarWrapper>
+    <SidebarGroup>
+      <SidebarItem label="Dashboard" href="/">
+        <svelte:fragment slot="icon">
+          <ChartPieSolid class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
+        </svelte:fragment>
+      </SidebarItem>
+      <SidebarItem label="Video" href="/video">
+        <svelte:fragment slot="icon">
+          <GridSolid class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
+        </svelte:fragment>
+      </SidebarItem>
+      <SidebarItem label="Alert" href="/alert">
+        <svelte:fragment slot="icon">
+          <MailBoxSolid class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
+        </svelte:fragment>
+      </SidebarItem>
+      <SidebarItem label="Data" href="/data">
+        <svelte:fragment slot="icon">
+          <DatabaseSolid class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
+        </svelte:fragment>
+      </SidebarItem>
+      <SidebarItem label="Terminal" href="/terminal">
+        <svelte:fragment slot="icon">
+          <TerminalSolid class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
+        </svelte:fragment>
+      </SidebarItem>
+      <SidebarItem label="Badge" href="/docs/components/badge">
+        <svelte:fragment slot="icon">
+          <ArrowRightToBracketOutline class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
+        </svelte:fragment>
+      </SidebarItem>
+    </SidebarGroup>
+  </SidebarWrapper>
+</Sidebar>
