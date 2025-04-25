@@ -1,22 +1,22 @@
 [
   {
-    "label": "beatboxing",
-    "score": 0.6807821989059448
+    "label": "fixing hair",
+    "score": 0.33254289627075195
   },
   {
-    "label": "whistling",
-    "score": 0.22988839447498322
+    "label": "stretching arm",
+    "score": 0.23415596783161163
   },
   {
-    "label": "answering questions",
-    "score": 0.025945225730538368
-  },
-  {
-    "label": "recording music",
-    "score": 0.012189717032015324
+    "label": "massaging person's head",
+    "score": 0.12705962359905243
   },
   {
     "label": "cracking neck",
-    "score": 0.007936551235616207
+    "score": 0.0532991886138916
+  },
+  {
+    "label": "brushing hair",
+    "score": 0.043873000890016556
   }
 ]
