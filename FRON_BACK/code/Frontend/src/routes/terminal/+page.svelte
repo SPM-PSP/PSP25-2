@@ -24,7 +24,7 @@
   import { onMount, onDestroy } from 'svelte';
   onMount(() => {
     fetchResult();
-    timer = setInterval(refresh, 1000); // 建议1秒刷新一次，避免接口压力
+    timer = setInterval(refresh, 100); // 建议1秒刷新一次，避免接口压力
   });
   onDestroy(() => {
     clearInterval(timer);

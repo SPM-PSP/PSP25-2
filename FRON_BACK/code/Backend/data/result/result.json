@@ -1,22 +1,22 @@
 [
   {
-    "label": "fixing hair",
-    "score": 0.33254289627075195
+    "label": "answering questions",
+    "score": 0.4941883385181427
   },
   {
-    "label": "stretching arm",
-    "score": 0.23415596783161163
+    "label": "beatboxing",
+    "score": 0.18307024240493774
   },
   {
-    "label": "massaging person's head",
-    "score": 0.12705962359905243
+    "label": "playing poker",
+    "score": 0.06141700968146324
   },
   {
-    "label": "cracking neck",
-    "score": 0.0532991886138916
+    "label": "testifying",
+    "score": 0.05382224917411804
   },
   {
-    "label": "brushing hair",
-    "score": 0.043873000890016556
+    "label": "texting",
+    "score": 0.053186673671007156
   }
 ]

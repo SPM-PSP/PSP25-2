@@ -2,7 +2,7 @@ import cv2
 import os
 import time
 import threading
-PICTURE_INTERVAL = 0.1  # 秒
+PICTURE_INTERVAL = 0.05  # 秒
 VIDEO_FRAME_COUNT = 30
 VIDEO_INTERVAL = 0.1    # 秒
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
