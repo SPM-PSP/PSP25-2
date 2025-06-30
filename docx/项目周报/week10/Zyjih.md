@@ -1,8 +1,5 @@
 ## Progress
-- Video Stream
-- Fix Bugs
 
 ## Problem
--
 
 ## Plan

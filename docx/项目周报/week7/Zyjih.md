@@ -1,3 +1,9 @@
-## Module
-### Flowbite Svelte Frontend
-- UI Implementation
+## Progress
+- Continue integrating Flowbite Svelte components into the project
+- Fix Bugs
+
+## Problem
+- 
+
+## Plan
+- 
