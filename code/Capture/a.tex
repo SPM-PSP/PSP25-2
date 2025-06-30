@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{booktabs}
+
+\begin{document}
+
+\textbf{8. 今有10组观察数据由下表给出：}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$x$ & 0.5 & $-0.8$ & 0.9 & $-2.8$ & 6.5 & 2.3 & 1.6 & 5.1 & $-1.9$ & $-1.5$ \\
+\hline
+$y$ & $-0.3$ & $-1.2$ & 1.1 & $-3.5$ & 4.6 & 1.8 & 0.5 & 3.8 & $-2.8$ & 0.5 \\
+\hline
+\end{tabular}
+\end{center}
+
+应用线性模型 $y_i = \beta_0 + \beta_1 x_i + \varepsilon_i$，$i = 1,2,\cdots,10$，假定诸 $\varepsilon_i$ 相互独立，且均服从分布 $N(0,\sigma^2)$。
+
+(1) 求 $\beta_0, \beta_1$ 的最小二乘估计。
+
+(2) 计算剩余方差 $\sigma_e^2$。
+
+(3) 在显著性水平 $\alpha = 0.05$ 下检验假设 $H_0: \beta_1 = 0$。
+
+(4) 求 $y$ 的置信水平为 0.95 的预测区间。
+
+\vspace{1em}
+
+\textbf{11. 设 $y_i = \beta_0 + \beta_1 x_i + \varepsilon_i$ ($i = 1, 2, \cdots, n$)，其中诸 $\varepsilon_i$ 相互独立，且均服从分布 $N(0, \sigma^2)$。}
+
+(1) 导出假设 $H_0: \beta_1 = 0$ 的 $F$ 检验统计量。
+
+(2) 如果 $\bar{x} = 0$，导出假设 $H_0: \beta_0 = \beta_1$ 的 $F$ 检验统计量。
+
+\vspace{1em}
+
+\textbf{14. 设 $Y = X\boldsymbol{\beta} + \boldsymbol{\varepsilon}$，$E(\boldsymbol{\varepsilon}) = \mathbf{0}$，$\text{Var}(\boldsymbol{\varepsilon}) = \sigma^2 \mathbf{M}$，$\mathbf{M}$ 为已知的正定矩阵，$X$ 为 $m \times k$ 阶矩阵，试证 $\hat{\boldsymbol{\beta}} = (\mathbf{X}^T\mathbf{M}^{-1}\mathbf{X})^{-1}\mathbf{X}^T\mathbf{M}^{-1}Y$ 使 $(Y - X\boldsymbol{\beta})^T\mathbf{M}^{-1}(Y - X\boldsymbol{\beta})$ 达到极小，称 $\hat{\boldsymbol{\beta}}$ 为 $\boldsymbol{\beta}$ 的加权最小二乘估计（提示：令 $z = \mathbf{K}^{-1}Y$，$\mathbf{X}^* = \mathbf{K}^{-1}\mathbf{X}$，其中 $\mathbf{M} = \mathbf{K}\mathbf{K}^T$）。}
+
+\end{document}
