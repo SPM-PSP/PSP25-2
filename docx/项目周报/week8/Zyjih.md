@@ -2,7 +2,7 @@
 - Video Stream
 
 ## Problem
-- Unstable
+- Latency
 
 ## Plan
-- Fix
+- Fix the Latency

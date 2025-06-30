@@ -1,8 +1,9 @@
 ## Progress
-- Video Stream
+- Smooth Video
 - Fix Bugs
 
 ## Problem
--
+- Null
 
 ## Plan
+- Software Deployment
